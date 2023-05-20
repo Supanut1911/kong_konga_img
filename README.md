@@ -1,5 +1,6 @@
-```
+## Image
 
+```
 version: "3.7"
 volumes:
   kong_data: {}
@@ -102,8 +103,30 @@ services:
       - kong-database
     ports:
       - "1337:1337"
+```
+
+---
+
+## Step
+
+```
+
+  docker-compose up -d
+
+```
+
+## Usage
+
+```
+
+  UI:
+    {{domain_name}}:1337
 
 
+  kong_admin:
+    {{domain_name}}:8001
 
 
+  kong_client:
+    {{domain_name}}:8000
 ```
